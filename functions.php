@@ -35,7 +35,9 @@ function get_futbol_data() {
     $url = 'https://api.football-data.org/v4/competitions/PD/standings';
     $args = array(
         'headers' => array(
-            'X-Auth-Token' => 'a16bd86af13c4dc399d60c4c0a3b4259'  // 'tu-token-api' Insertar token 
+            'X-Auth-Token' => 'a16bd86af13c4dc399d60c4c0a3b4259'  // 'tu-token-api' Insertar token (Token gratuito de prueba - 10 consultas por min)
+                                                                    // 'X-Auth-Token' => getenv('FOOTBALL_API_KEY') // Usar .env para mayor seguridad en proyecto desplegado
+
         ),
     );
     $response = wp_remote_get($url, $args);

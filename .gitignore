@@ -1,0 +1,11 @@
+# Ignorar archivos de entorno
+.env
+
+# Ignorar la carpeta vendor
+/vendor/
+
+# Otros archivos comunes a ignorar en proyectos PHP
+*.log
+*.bak
+*.swp
+.DS_Store
